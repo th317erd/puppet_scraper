@@ -1,0 +1,39 @@
+{
+  "name": "puppet_scraper",
+  "version": "1.0.0",
+  "description": "Puppet Scraper",
+  "main": "app/index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/jasmine",
+    "makemigrations": "node ./node_modules/sequelize-auto-migrations/bin/makemigration.js --name initial",
+    "migrate": "node ./node_modules/sequelize-auto-migrations/bin/runmigration.js",
+    "shell": "node --experimental-repl-await --experimental-top-level-await src/shell.js",
+    "start": "node app/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/puppet/puppet_scraper.git"
+  },
+  "keywords": [
+    "scraper"
+  ],
+  "author": "Puppet",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/puppet/puppet_scraper/issues"
+  },
+  "homepage": "https://github.com/puppet/puppet_scraper#readme",
+  "dependencies": {
+    "inflection": "^1.13.1",
+    "mythix": "^1.0.3",
+    "nife": "^1.5.0",
+    "pg": "^8.7.1",
+    "pg-hstore": "^2.3.4",
+    "puppeteer": "^13.1.1",
+    "sequelize": "^6.13.0",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "jasmine": "^4.0.2"
+  }
+}
